@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f0f0f5;
+  color: #333;
+}
+
+header {
+  background: darkcyan;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color:chocolate;
+  transform: scale(1.05);      /* Leve aumento no tamanho */
+  border-radius: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.pages a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color:darkslategrey;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pages a:hover {
+  background-color:tan;   /* Cor de fundo no hover */
+  transform: scale(1.05);      /* Leve aumento no tamanho */
+  border-radius: 5px;
+}
+
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background: darkcyan;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
